@@ -18,7 +18,12 @@ from django.contrib import admin
 from django.contrib.auth import login
 from django.urls import path
 
+from autoplay import views
+
 urlpatterns = [
-    url(r'^login', login),
     path('admin/', admin.site.urls),
+    url(r'^login', views.login_page,name='login'),
+
+    url(r'^setting/product/view/(?P<id>\d+)', views.view_product, name='productview'),
+
 ]

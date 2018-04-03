@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
+    #'users',
     'autoplay',
     'webinterface',
 ]
@@ -85,7 +85,8 @@ DATABASES = {
         'NAME':'autoplay',
         'USER':'autoplay',
         'PASSWORD':'autoplay',
-        'HOST':'10.1.2.71',
+        #'HOST':'10.1.2.71',
+        'HOST':'192.168.159.128',
         'PORT':'3306'
     }
 }
